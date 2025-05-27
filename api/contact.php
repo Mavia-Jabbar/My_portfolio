@@ -1,4 +1,8 @@
 <?php
+// Disable error display for production (remove warnings from output)
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_WARNING);
+ini_set('display_errors', 0);
+
 // Include PHPMailer
 require __DIR__ . '/src/PHPMailer.php';
 require __DIR__ . '/src/SMTP.php';
@@ -13,11 +17,11 @@ $error = $success = "";
 // Check if form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get and sanitize form data
-    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
-    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
-    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    $name = filter_var($_POST['name'] ?? '', FILTER_SANITIZE_SPECIAL_CHARS);
+    $email = filter_var($_POST['email'] ?? '', FILTER_SANITIZE_EMAIL);
+    $subject = filter_var($_POST['subject'] ?? '', FILTER_SANITIZE_SPECIAL_CHARS);
+    $phone = filter_var($_POST['phone'] ?? '', FILTER_SANITIZE_SPECIAL_CHARS);
+    $message = filter_var($_POST['message'] ?? '', FILTER_SANITIZE_SPECIAL_CHARS);
 
     // Validate form data
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {

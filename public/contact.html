@@ -226,88 +226,94 @@
                 </nav>
                 <div class="main-hero-services-portfolio animate-section">
                     <div class="portfolio">
-                        <h1 class="section-heading-text-services title-portfolio">Get In Touch</h1>
-                        <p class="section-heading-text-service">I'm always excited to take on new projects and
-                            collaborate with innovative minds. If you have a project in mind or just
-                            want to chat about design, feel free to reach out!</p>
-                        <div class="contact-detail row">
-                            <div class="col-lg-4 col-md-6 col-12 text-center">
-                                <a href="https://maps.app.goo.gl/ptjEcdxBgMnfsJdD9" target="_blank"
-                                    class="main-box text-center">
-                                    <div class="box-call">
-                                        <img src="assets/images/contact/location.svg" alt="location">
-                                    </div>
-                                    <div class="center-main">ADDRESS</div>
-                                    <p>karachi Pakistan</p>
-                                </a>
+        <h1 class="section-heading-text-services title-portfolio">Get In Touch</h1>
+        <p class="section-heading-text-service">I'm always excited to take on new projects and collaborate with innovative minds. If you have a project in mind or just want to chat about design, feel free to reach out!</p>
+        <div class="contact-detail row">
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+                <a href="https://maps.app.goo.gl/ptjEcdxBgMnfsJdD9" target="_blank" class="main-box text-center">
+                    <div class="box-call">
+                        <img src="assets/images/contact/location.svg" alt="location">
+                    </div>
+                    <div class="center-main">ADDRESS</div>
+                    <p>karachi Pakistan</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+                <a href="mailto:info@progrow.com" class="main-box text-center">
+                    <div class="box-call">
+                        <img src="assets/images/contact/mail.svg" alt="mail">
+                    </div>
+                    <div class="center-main">Email</div>
+                    <p>maviajabbar460@gmail.com</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+                <a href="tel:+12345679889" class="main-box text-center">
+                    <div class="box-call">
+                        <img src="assets/images/contact/phone.svg" alt="location">
+                    </div>
+                    <div class="center-main">PHONE</div>
+                    <p>+92 342 2834104</p>
+                </a>
+            </div>
+        </div>
+        <div class="portfolio">
+            <h1 class="section-heading-text-services title-portfolio">Let's Work Together!</h1>
+            <div id="message"></div>
+            <form action="/api/contact" method="POST" class="contact-info row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="main-in form-group">
+                        <p>Name*</p>
+                        <input type="text" name="name" placeholder="Your Name" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="main-in form-group">
+                        <p>Email*</p>
+                        <input type="email" name="email" placeholder="Your Email" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="main-in form-group">
+                        <p>Phone*</p>
+                        <input type="tel" name="phone" placeholder="Your Phone Number" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="main-in form-group">
+                        <p>Subject</p>
+                        <input type="text" name="subject" placeholder="Subject" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="main-in form-group">
+                        <p>Message</p>
+                        <input name="message" placeholder="Write Here..." rows="5" autocomplete="off"></input>
+                    </div>
+                </div>
+                <div class="menu-port contact-main">
+                    <button type="submit" class="load-port">
+                        <div class="load-main">
+                            <div class="load-down">
+                                <img src="assets/images/contact/submit.svg" alt="submit" class="icon-down">
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12 text-center">
-                                <a href="mailto:info@progrow.com" class="main-box text-center">
-                                    <div class="box-call">
-                                        <img src="assets/images/contact/mail.svg" alt="mail">
-                                    </div>
-                                    <div class="center-main">Email</div>
-                                    <p>maviajabbar460@gmail.com</p>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12 text-center">
-                                <a href="tel:+12345679889" class="main-box text-center">
-                                    <div class="box-call">
-                                        <img src="assets/images/contact/phone.svg" alt="location">
-                                    </div>
-                                    <div class="center-main">PHONE</div>
-                                    <p>+92 342 2834104</p>
-                                </a>
-                            </div>
+                            <p>Submit Now</p>
                         </div>
-                        <div class="portfolio">
-                            <h1 class="section-heading-text-services title-portfolio">Let's Work Together!</h1>
-                            <div class="contact-info row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="main-in">
-                                        <p>name*</p>
-                                        <input type="text" name="name" placeholder="Your Name" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="main-in">
-                                        <p>EMAIL*</p>
-                                        <input type="email" name="Email" placeholder="Your Email" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="main-in">
-                                        <p>phone*</p>
-                                        <input type="number" name="number" placeholder="Your Phone Number"
-                                            autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="main-in">
-                                        <p>SUBJECT</p>
-                                        <input type="text" name="name" placeholder="Subject" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="main-in">
-                                        <p>Message</p>
-                                        <input type="text" name="name" placeholder="Write Here..." autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-port contact-main">
-                                <a href="javascript:void(0)" class="load-port" id="loadMore">
-                                    <div class="load-main">
-                                        <div class="load-down">
-                                            <img src="assets/images/contact/submit.svg" alt="download"
-                                                class="icon-down">
-                                        </div>
-                                        <p>Submit Now</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Show success or error message from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        if (status) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = status;
+            messageDiv.className = status.includes('Thank you') ? 'success' : 'error';
+        }
+    </script>
                             <!-- <div class="col-12 main-location"> 
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193597.13828382973!2d-74.2913111195153!3d40.69698241526669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sau!4v1738663272509!5m2!1sen!2sau"

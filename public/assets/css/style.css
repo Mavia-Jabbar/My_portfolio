@@ -947,16 +947,16 @@ body {
     max-width: 210px;
 }
 .corner-figma {
-    border: 2px solid #00CC97;
-    background: rgba(0, 204, 151, 0.10);
+    border: 2px solid #11cc00;
+    background: rgba(123, 219, 194, 0.1);
 }
 .corner-photoshop {
     border: 2px solid #31A8FF;
     background: rgba(49, 168, 255, 0.10);
 }
 .corner-xd {
-    border: 2px solid #FF61F6;
-    background: rgba(255, 97, 246, 0.10);
+    border: 2px solid #00ff37;
+    background: rgba(182, 180, 182, 0.192);
 }
 .corner-skecth {
     border: 2px solid #FFDB59;
@@ -967,7 +967,7 @@ body {
     background: rgba(255, 51, 102, 0.10);
 }
 .xd {
-    color: #FF61F6 !important;
+    color: #00ff22 !important;
 }
 .photoshop {
     color: #31A8FF !important;
